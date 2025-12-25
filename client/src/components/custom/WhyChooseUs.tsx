@@ -9,8 +9,8 @@ export function WhyChooseUs() {
     },
     {
       icon: Award,
-      title: "15 Years in Greece",
-      description: "A decade and a half of experience navigating the Greek property market."
+      title: "Trusted Advisor",
+      description: "Dedicated to providing personalized guidance and strategic insight for your property investment."
     },
     {
       icon: Handshake,
