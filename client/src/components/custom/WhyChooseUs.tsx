@@ -1,5 +1,4 @@
 import { ShieldCheck, Award, Handshake, Eye } from "lucide-react";
-import advisorImg from "@assets/generated_images/professional_and_warm_portrait_of_hebba_soliman.png";
 
 export function WhyChooseUs() {
   const features = [
@@ -28,24 +27,11 @@ export function WhyChooseUs() {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
-          <div className="lg:w-1/2">
-            <div className="relative inline-block mb-8">
-              <img 
-                src={advisorImg} 
-                alt="Hebba Soliman" 
-                className="w-full max-w-md rounded-sm shadow-2xl grayscale-[10%] hover:grayscale-0 transition-all duration-500"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-accent p-8 text-white hidden md:block">
-                <p className="font-display text-2xl mb-1">Hebba Soliman</p>
-                <p className="text-sm uppercase tracking-widest opacity-80">Principal Advisor</p>
-              </div>
-            </div>
-          </div>
-
+        <div className="flex flex-col lg:flex-row gap-16 items-start">
           <div className="lg:w-1/2">
             <span className="text-accent font-medium tracking-widest uppercase text-sm mb-4 block">Personal Advisory</span>
             <h2 className="text-4xl md:text-5xl font-display font-medium mb-8">Personal Guidance for MENA Families</h2>
+            <p className="text-xl text-primary font-medium mb-6">Hebba Soliman <span className="text-accent ml-2">|</span> Principal Advisor</p>
             <p className="text-lg text-muted-foreground font-light leading-relaxed mb-12">
               I work directly with families seeking permanent European residency through strategic real estate investment in Greece. Every case is handled personally, with clear advice, discretion, and a long-term view of what’s best for your family.
             </p>
@@ -64,6 +50,14 @@ export function WhyChooseUs() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          <div className="lg:w-1/2 bg-secondary/30 p-12 rounded-sm border border-border/50">
+            <h3 className="text-2xl font-display font-medium mb-6 text-primary italic">"The Golden Visa is more than a residency permit—it is a foundation for your family's future security in Europe. My role is to ensure that foundation is solid, strategic, and lasting."</h3>
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-[1px] bg-accent" />
+              <p className="text-primary font-medium uppercase tracking-widest text-sm">Hebba Soliman</p>
             </div>
           </div>
         </div>
