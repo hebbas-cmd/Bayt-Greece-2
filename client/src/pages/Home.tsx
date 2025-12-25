@@ -24,9 +24,9 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto bg-white shadow-2xl shadow-gray-200/50 rounded-lg overflow-hidden flex flex-col md:flex-row">
             <div className="p-12 md:w-1/2 bg-primary text-white flex flex-col justify-center">
-              <h2 className="text-3xl font-display font-medium mb-6">Start Your Journey</h2>
+              <h2 className="text-3xl font-display font-medium mb-6">Let's Discuss Your Future</h2>
               <p className="text-white/70 mb-8 leading-relaxed font-light">
-                Our experts are ready to guide you through the Greece Golden Visa program. Request a free eligibility assessment today.
+                Every family's situation is unique. Send me a message, and I'll personally review your case to determine the best investment strategy for your needs.
               </p>
               <div className="space-y-4">
                  <div className="flex items-center gap-3">
