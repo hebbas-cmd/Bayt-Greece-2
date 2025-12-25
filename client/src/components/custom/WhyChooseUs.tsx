@@ -1,27 +1,27 @@
 import { ShieldCheck, Award, Handshake, Eye } from "lucide-react";
-import advisorImg from "@assets/generated_images/professional_and_warm_portrait_of_a_senior_consultant.png";
+import advisorImg from "@assets/generated_images/professional_and_warm_portrait_of_hebba_soliman.png";
 
 export function WhyChooseUs() {
   const features = [
     {
       icon: ShieldCheck,
       title: "Direct Access",
-      description: "You deal directly with me. No middlemen, no junior associates—just experienced, personal guidance."
+      description: "You work directly with me. No junior associates—just experienced, personal guidance for your family's future."
     },
     {
       icon: Award,
-      title: "15 Years in Greece",
-      description: "A decade and a half of navigating the Greek property market and residency laws."
+      title: "MENA Expertise",
+      description: "Based in Egypt, I deeply understand the specific needs and aspirations of families across the MENA region."
     },
     {
       icon: Handshake,
-      title: "Local Relations",
-      description: "Strong personal ties with local authorities and the best legal minds in Athens."
+      title: "Discreet Handling",
+      description: "Every case is handled with the highest level of discretion and a focus on long-term security."
     },
     {
       icon: Eye,
       title: "Transparent Advice",
-      description: "I'll tell you what the brochures won't. Honesty is the foundation of my practice."
+      description: "I provide clear, honest advice on what's truly best for your family's residency goals."
     }
   ];
 
@@ -33,11 +33,11 @@ export function WhyChooseUs() {
             <div className="relative inline-block mb-8">
               <img 
                 src={advisorImg} 
-                alt="Nikolas Papadakis" 
-                className="w-full max-w-md rounded-sm shadow-2xl grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                alt="Hebba Soliman" 
+                className="w-full max-w-md rounded-sm shadow-2xl grayscale-[10%] hover:grayscale-0 transition-all duration-500"
               />
               <div className="absolute -bottom-6 -right-6 bg-accent p-8 text-white hidden md:block">
-                <p className="font-display text-2xl mb-1">Nikolas Papadakis</p>
+                <p className="font-display text-2xl mb-1">Hebba Soliman</p>
                 <p className="text-sm uppercase tracking-widest opacity-80">Principal Advisor</p>
               </div>
             </div>
@@ -45,9 +45,9 @@ export function WhyChooseUs() {
 
           <div className="lg:w-1/2">
             <span className="text-accent font-medium tracking-widest uppercase text-sm mb-4 block">Personal Advisory</span>
-            <h2 className="text-4xl md:text-5xl font-display font-medium mb-8">A Personal Path to Your European Future</h2>
+            <h2 className="text-4xl md:text-5xl font-display font-medium mb-8">Personal Guidance for MENA Families</h2>
             <p className="text-lg text-muted-foreground font-light leading-relaxed mb-12">
-              The Golden Visa process is more than a transaction—it's a life transition. I provide a boutique service where your investment is handled with the personal care and attention to detail it deserves.
+              I work directly with families seeking permanent European residency through strategic real estate investment in Greece. Every case is handled personally, with clear advice, discretion, and a long-term view of what’s best for your family.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

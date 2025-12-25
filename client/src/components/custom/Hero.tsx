@@ -30,7 +30,7 @@ export function Hero() {
           </h1>
           
           <p className="text-lg md:text-2xl text-white/80 font-light max-w-xl leading-relaxed">
-            I help families secure permanent European residency through strategic real estate investment in Greece. Expert, personal guidance from start to finish.
+            I help families across the MENA region secure permanent European residency through strategic real estate investment in Greece.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
