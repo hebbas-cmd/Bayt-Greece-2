@@ -13,12 +13,12 @@ export function ProcessTimeline() {
     {
       number: "03",
       title: "Legal Due Diligence",
-      description: "Our legal team performs thorough checks and prepares the application."
+      description: "Thorough legal checks are performed to ensure a secure investment and application preparation."
     },
     {
       number: "04",
       title: "Investment",
-      description: "Execute the investment and submit the Golden Visa application."
+      description: "Execution of the investment and submission of the Golden Visa application."
     },
     {
       number: "05",

@@ -4,18 +4,18 @@ export function WhyChooseUs() {
   const features = [
     {
       icon: ShieldCheck,
-      title: "Direct Access",
-      description: "You work directly with me. No junior associates—just experienced, personal guidance for your family's future."
+      title: "Vetted Partners",
+      description: "I connect you with top-tier legal firms and reputable developers in Greece."
     },
     {
       icon: Award,
-      title: "MENA Expertise",
-      description: "Based in Egypt, I deeply understand the specific needs and aspirations of families across the MENA region."
+      title: "15 Years in Greece",
+      description: "A decade and a half of experience navigating the Greek property market."
     },
     {
       icon: Handshake,
-      title: "Discreet Handling",
-      description: "Every case is handled with the highest level of discretion and a focus on long-term security."
+      title: "Strategic Advisory",
+      description: "Guidance through property selection, investment strategy, and the path to residency."
     },
     {
       icon: Eye,
