@@ -38,6 +38,13 @@ export function Navigation() {
     }
   };
 
+  const handleContactClick = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav
       className={cn(
@@ -90,8 +97,9 @@ export function Navigation() {
             EN
           </Button>
           <Button 
+            onClick={handleContactClick}
             className={cn(
-                "font-medium",
+                "font-medium transition-all",
                 isScrolled ? "bg-primary text-white hover:bg-primary/90" : "bg-white text-primary hover:bg-white/90"
             )}
           >
@@ -125,7 +133,12 @@ export function Navigation() {
               {link.name}
             </a>
           ))}
-          <Button className="w-full mt-4 bg-primary text-white">Contact Us</Button>
+          <Button 
+            onClick={handleContactClick}
+            className="w-full mt-4 bg-primary text-white"
+          >
+            Contact Us
+          </Button>
         </div>
       )}
     </nav>
