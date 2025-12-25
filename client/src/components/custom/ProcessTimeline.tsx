@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils";
+
 export function ProcessTimeline() {
   const steps = [
     {
@@ -30,25 +32,43 @@ export function ProcessTimeline() {
   return (
     <section id="process" className="py-24 bg-primary text-white overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="mb-16">
+        <div className="mb-16 text-center">
           <span className="text-accent font-medium tracking-widest uppercase text-sm mb-4 block">The Journey</span>
-          <h2 className="text-4xl md:text-5xl font-display font-medium">Application Process</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-medium">Process Timeline</h2>
         </div>
 
-        <div className="relative">
-          {/* Connecting Line (Desktop) */}
-          <div className="absolute top-1/2 left-0 w-full h-[1px] bg-white/20 -translate-y-1/2 hidden md:block" />
+        <div className="relative max-w-5xl mx-auto">
+          {/* Vertical line (Mobile/Desktop) */}
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[1px] bg-white/10 -translate-x-1/2" />
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div className="space-y-12">
             {steps.map((step, index) => (
-              <div key={index} className="relative z-10 group">
-                <div className="w-16 h-16 rounded-full bg-primary border border-white/20 flex items-center justify-center mb-6 transition-all duration-300 group-hover:border-accent group-hover:scale-110">
-                  <span className="font-display text-xl font-bold text-accent">{step.number}</span>
+              <div key={index} className={cn(
+                "relative flex items-center justify-between w-full",
+                index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
+              )}>
+                {/* Content */}
+                <div className="w-full md:w-[45%] pl-20 md:pl-0">
+                  <div className={cn(
+                    "p-8 rounded-sm bg-white/5 border border-white/10 hover:border-accent/30 transition-colors",
+                    index % 2 === 0 ? "md:text-left" : "md:text-right"
+                  )}>
+                    <h3 className="text-xl font-display font-medium mb-3">{step.title}</h3>
+                    <p className="text-white/60 text-sm leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-display font-medium mb-3">{step.title}</h3>
-                <p className="text-white/60 text-sm leading-relaxed border-l-2 border-white/10 pl-4 md:border-0 md:pl-0">
-                  {step.description}
-                </p>
+
+                {/* Number Circle */}
+                <div className="absolute left-0 md:left-1/2 -translate-x-1/2 flex items-center justify-center">
+                  <div className="w-16 h-16 rounded-full bg-primary border-2 border-accent flex items-center justify-center shadow-[0_0_20px_rgba(212,163,115,0.2)]">
+                    <span className="font-display text-xl font-bold text-accent">{step.number}</span>
+                  </div>
+                </div>
+
+                {/* Empty Space for layout */}
+                <div className="hidden md:block md:w-[45%]" />
               </div>
             ))}
           </div>
