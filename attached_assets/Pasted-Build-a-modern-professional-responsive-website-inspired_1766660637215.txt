@@ -1,0 +1,69 @@
+Build a modern, professional, responsive website inspired by high-end residence-by-investment advisory firms (similar in style and structure to Henley & Partners, but with original content and design).
+Website purpose: Generate qualified leads for the Greece Golden Visa / Residence by Investment program and educate users clearly and credibly.
+Tech stack:
+* Frontend: React + Tailwind CSS
+* Framework: Next.js (App Router)
+* Clean, modular, production-ready code
+* SEO-friendly structure
+* Mobile-first design
+Design & UX:
+* Minimal, luxury, corporate look
+* White background with subtle neutral accents (light gray, gold, navy)
+* Large headings, strong typography, generous spacing
+* Trust-driven layout (not salesy)
+* Sticky top navigation bar
+* Clear CTAs
+Pages & Sections to include:
+1. Homepage
+* Hero section with headline like: “Greece Residence by Investment” Subheadline explaining benefits in one sentence
+* Primary CTA: “Request Eligibility Assessment”
+* Secondary CTA: “Download Program Overview”
+2. Program Overview
+* What is the Greece Golden Visa
+* Minimum investment amounts (structured as cards)
+* Types of qualifying investments
+* Residency rights and benefits
+* Path to renewal and long-term stay
+3. Benefits Section
+* Visa-free travel within Schengen
+* Family inclusion
+* No minimum stay requirement
+* Real estate ownership
+* High rental demand
+4. Process Timeline
+* Step-by-step process displayed visually:
+    1. Eligibility check
+    2. Property selection
+    3. Legal due diligence
+    4. Investment & submission
+    5. Residence permit issuance
+5. Investment Options
+* Cards for:
+    * Residential real estate
+    * Commercial real estate
+    * Strategic locations
+* Each card links to a “View Properties” page
+6. Why Choose Us
+* Experience
+* Local legal partners
+* End-to-end handling
+* Transparency
+* Post-investment support
+7. Lead Forms
+* Short lead form (Name, Email, Country, Budget range)
+* Longer eligibility form (step-based, optional)
+* Forms should be reusable components
+* Validate inputs
+8. Footer
+* Contact info
+* Legal disclaimer
+* Privacy policy
+* Social links
+Additional requirements:
+* Use placeholder text for legal content
+* No copyrighted text
+* Use reusable components
+* Clean folder structure
+* Add basic metadata for SEO
+* Prepare for future CMS or API integration
+Output full working code, including components, pages, and styles.
