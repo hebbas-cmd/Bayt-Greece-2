@@ -20,7 +20,7 @@ export function Hero() {
         <div className="max-w-3xl space-y-8">
           <div className="inline-block px-4 py-1.5 border border-white/30 rounded-full bg-white/10 backdrop-blur-sm">
             <span className="text-white/90 text-sm font-medium tracking-widest uppercase">
-              Official Golden Visa Advisory
+              Golden Visa Advisory
             </span>
           </div>
           
