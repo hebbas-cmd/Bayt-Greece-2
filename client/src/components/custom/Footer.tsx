@@ -8,10 +8,10 @@ export function Footer() {
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 border border-white/30 flex items-center justify-center">
-                <span className="font-display font-bold text-lg">A</span>
+                <span className="font-display font-bold text-lg">B</span>
               </div>
               <span className="font-display font-bold text-lg tracking-tight uppercase">
-                Aegean Residency
+                Bayt Greece
               </span>
             </div>
             <p className="text-white/60 leading-relaxed font-light">
@@ -45,13 +45,13 @@ export function Footer() {
               <li>Athens, Greece</li>
               <li>London, United Kingdom</li>
               <li className="pt-2 text-white">+30 210 123 4567</li>
-              <li className="text-white">advisory@aegean-residency.com</li>
+              <li className="text-white">advisory@bayt-greece.com</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-white/40 text-sm">
-          <p>&copy; {new Date().getFullYear()} Aegean Residency. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Bayt Greece. All rights reserved.</p>
           <p className="mt-2 md:mt-0">Designed for Excellence.</p>
         </div>
       </div>

@@ -53,13 +53,13 @@ export function Navigation() {
                 "w-10 h-10 border-2 flex items-center justify-center transition-colors",
                  isScrolled ? "border-primary text-primary" : "border-white text-white"
             )}>
-              <span className="font-display font-bold text-xl">A</span>
+              <span className="font-display font-bold text-xl">B</span>
             </div>
             <span className={cn(
               "font-display font-bold text-xl tracking-tight uppercase",
               isScrolled ? "text-primary" : "text-white"
             )}>
-              Aegean Residency
+              Bayt Greece
             </span>
         </Link>
 
