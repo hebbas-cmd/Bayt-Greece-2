@@ -30,31 +30,31 @@ export function ProcessTimeline() {
   ];
 
   return (
-    <section id="process" className="py-24 bg-primary text-white overflow-hidden">
+    <section id="process" className="py-16 bg-primary text-white overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="mb-16 text-center">
-          <span className="text-accent font-medium tracking-widest uppercase text-sm mb-4 block">The Journey</span>
-          <h2 className="text-4xl md:text-5xl font-display font-medium">Process Timeline</h2>
+        <div className="mb-12 text-center">
+          <span className="text-accent font-medium tracking-widest uppercase text-xs mb-3 block">The Journey</span>
+          <h2 className="text-3xl md:text-4xl font-display font-medium">Process Timeline</h2>
         </div>
 
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-4xl mx-auto">
           {/* Vertical line (Mobile/Desktop) */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-[1px] bg-white/10 -translate-x-1/2" />
+          <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-[1px] bg-white/10 -translate-x-1/2" />
 
-          <div className="space-y-12">
+          <div className="space-y-6">
             {steps.map((step, index) => (
               <div key={index} className={cn(
                 "relative flex items-center justify-between w-full",
                 index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
               )}>
                 {/* Content */}
-                <div className="w-full md:w-[45%] pl-20 md:pl-0">
+                <div className="w-full md:w-[46%] pl-14 md:pl-0">
                   <div className={cn(
-                    "p-8 rounded-sm bg-white/5 border border-white/10 hover:border-accent/30 transition-colors",
+                    "p-5 rounded-sm bg-white/5 border border-white/10 hover:border-accent/30 transition-colors",
                     index % 2 === 0 ? "md:text-left" : "md:text-right"
                   )}>
-                    <h3 className="text-xl font-display font-medium mb-3">{step.title}</h3>
-                    <p className="text-white/60 text-sm leading-relaxed">
+                    <h3 className="text-lg font-display font-medium mb-1">{step.title}</h3>
+                    <p className="text-white/60 text-xs leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -62,13 +62,13 @@ export function ProcessTimeline() {
 
                 {/* Number Circle */}
                 <div className="absolute left-0 md:left-1/2 -translate-x-1/2 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-primary border-2 border-accent flex items-center justify-center shadow-[0_0_20px_rgba(212,163,115,0.2)]">
-                    <span className="font-display text-xl font-bold text-accent">{step.number}</span>
+                  <div className="w-12 h-12 rounded-full bg-primary border-2 border-accent flex items-center justify-center shadow-[0_0_15px_rgba(212,163,115,0.15)]">
+                    <span className="font-display text-lg font-bold text-accent">{step.number}</span>
                   </div>
                 </div>
 
                 {/* Empty Space for layout */}
-                <div className="hidden md:block md:w-[45%]" />
+                <div className="hidden md:block md:w-[46%]" />
               </div>
             ))}
           </div>
