@@ -1,5 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import commercialImg from "@assets/stock_images/modern_renovated_com_99449152.jpg";
+import residentialImg from "@assets/stock_images/luxury_residential_p_486a3a83.jpg";
+import primeImg from "@assets/stock_images/premium_real_estate__a49f2d6d.jpg";
 
 export function InvestmentOptions() {
   return (
@@ -15,12 +18,16 @@ export function InvestmentOptions() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Option 1: Commercial Renewal */}
-          <div className="group bg-white rounded-sm overflow-hidden border border-border/50 hover:border-accent/50 transition-colors">
-            <div className="h-64 bg-gray-200 relative overflow-hidden">
-               {/* Placeholder for image */}
-               <div className="absolute inset-0 bg-neutral-400 group-hover:scale-105 transition-transform duration-700" />
+          <div className="group bg-white rounded-sm overflow-hidden border border-border/50 hover:border-accent/50 transition-colors shadow-sm">
+            <div className="h-64 relative overflow-hidden">
+               <img 
+                 src={commercialImg} 
+                 alt="Commercial Renewal" 
+                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+               />
+               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
                <div className="absolute bottom-6 left-6 right-6">
-                 <span className="bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">From €250,000</span>
+                 <span className="bg-white/95 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary shadow-sm">From €250,000</span>
                </div>
             </div>
             <div className="p-8">
@@ -28,19 +35,23 @@ export function InvestmentOptions() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Conversion of commercial properties to residential use, offering a lower entry threshold in prime areas.
               </p>
-              <Button variant="link" className="p-0 text-accent hover:text-accent/80 font-medium">
-                View Properties <ArrowRight className="ml-2 w-4 h-4" />
+              <Button variant="link" className="p-0 text-accent hover:text-accent/80 font-medium group/link">
+                View Properties <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
 
           {/* Option 2: Residential Real Estate */}
-          <div className="group bg-white rounded-sm overflow-hidden border border-border/50 hover:border-accent/50 transition-colors">
-            <div className="h-64 bg-gray-200 relative overflow-hidden">
-               {/* Placeholder for image */}
-               <div className="absolute inset-0 bg-neutral-200 group-hover:scale-105 transition-transform duration-700" />
+          <div className="group bg-white rounded-sm overflow-hidden border border-border/50 hover:border-accent/50 transition-colors shadow-sm">
+            <div className="h-64 relative overflow-hidden">
+               <img 
+                 src={residentialImg} 
+                 alt="Residential Real Estate" 
+                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+               />
+               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
                <div className="absolute bottom-6 left-6 right-6">
-                 <span className="bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">From €250,000</span>
+                 <span className="bg-white/95 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary shadow-sm">From €250,000</span>
                </div>
             </div>
             <div className="p-8">
@@ -48,19 +59,23 @@ export function InvestmentOptions() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Invest in residential properties in non-restricted areas. Ideal for personal use or rental income.
               </p>
-              <Button variant="link" className="p-0 text-accent hover:text-accent/80 font-medium">
-                View Properties <ArrowRight className="ml-2 w-4 h-4" />
+              <Button variant="link" className="p-0 text-accent hover:text-accent/80 font-medium group/link">
+                View Properties <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
 
           {/* Option 3: Prime Locations */}
-          <div className="group bg-white rounded-sm overflow-hidden border border-border/50 hover:border-accent/50 transition-colors">
-            <div className="h-64 bg-gray-200 relative overflow-hidden">
-               {/* Placeholder for image */}
-               <div className="absolute inset-0 bg-neutral-300 group-hover:scale-105 transition-transform duration-700" />
+          <div className="group bg-white rounded-sm overflow-hidden border border-border/50 hover:border-accent/50 transition-colors shadow-sm">
+            <div className="h-64 relative overflow-hidden">
+               <img 
+                 src={primeImg} 
+                 alt="Prime Locations" 
+                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+               />
+               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
                <div className="absolute bottom-6 left-6 right-6">
-                 <span className="bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary">From €800,000</span>
+                 <span className="bg-white/95 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary shadow-sm">From €800,000</span>
                </div>
             </div>
             <div className="p-8">
@@ -68,8 +83,8 @@ export function InvestmentOptions() {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Premium properties in high-demand areas like Athens, Thessaloniki, Mykonos, and Santorini.
               </p>
-              <Button variant="link" className="p-0 text-accent hover:text-accent/80 font-medium">
-                View Properties <ArrowRight className="ml-2 w-4 h-4" />
+              <Button variant="link" className="p-0 text-accent hover:text-accent/80 font-medium group/link">
+                View Properties <ArrowRight className="ml-2 w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
