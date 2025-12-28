@@ -43,20 +43,9 @@ export function Footer() {
             <h4 className="font-display text-lg mb-6">Contact</h4>
             <ul className="space-y-4 text-white/60">
               <li>Athens, Greece</li>
-              <li className="pt-2 text-white flex items-center gap-2">
-                <a href="tel:+201001400635" className="hover:text-accent transition-colors flex items-center gap-2">
-                  <span>+20 100 140 0635</span>
-                </a>
-              </li>
-              <li className="text-white flex items-center gap-2">
-                <a 
-                  href="https://wa.me/201001400635" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-accent transition-colors flex items-center gap-2"
-                >
-                  <span className="text-sm bg-green-600/20 text-green-400 px-2 py-0.5 rounded text-[10px] uppercase font-bold tracking-wider">WhatsApp</span>
-                  <span>+20 100 140 0635</span>
+              <li className="pt-2 text-white">
+                <a href="tel:+201001400635" className="hover:text-accent transition-colors">
+                  +20 100 140 0635
                 </a>
               </li>
               <li className="text-white">
