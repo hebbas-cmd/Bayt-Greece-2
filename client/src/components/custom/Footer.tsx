@@ -43,7 +43,6 @@ export function Footer() {
             <h4 className="font-display text-lg mb-6">Contact</h4>
             <ul className="space-y-4 text-white/60">
               <li>Athens, Greece</li>
-              <li>London, United Kingdom</li>
               <li className="pt-2 text-white">+30 210 123 4567</li>
               <li className="text-white">advisory@bayt-greece.com</li>
             </ul>
