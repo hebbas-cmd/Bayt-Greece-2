@@ -34,13 +34,15 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Button size="lg" className="bg-accent hover:bg-accent/90 text-white font-medium px-8 h-14 text-lg rounded-sm">
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-white font-medium px-8 h-14 text-lg rounded-sm"
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Check Eligibility
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-white hover:text-primary font-medium px-8 h-14 text-lg rounded-sm bg-transparent">
-              <Download className="mr-2 w-5 h-5" />
-              Program Overview
             </Button>
           </div>
         </div>
