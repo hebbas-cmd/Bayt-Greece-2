@@ -1,8 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import commercialImg from "@assets/stock_images/modern_renovated_com_99449152.jpg";
-import residentialImg from "@assets/stock_images/luxury_residential_p_486a3a83.jpg";
-import primeImg from "@assets/stock_images/premium_real_estate__a49f2d6d.jpg";
+import commercialImg from "@assets/stock_images/modern_architectural_4fb041b0.jpg";
+import residentialImg from "@assets/stock_images/contemporary_luxury__a7421623.jpg";
+import primeImg from "@assets/stock_images/exclusive_luxury_vil_db79e144.jpg";
 
 export function InvestmentOptions() {
   return (
@@ -25,7 +25,7 @@ export function InvestmentOptions() {
                  alt="Commercial Renewal" 
                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                />
-               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500" />
                <div className="absolute bottom-6 left-6 right-6">
                  <span className="bg-white/95 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary shadow-sm">From €250,000</span>
                </div>
@@ -49,7 +49,7 @@ export function InvestmentOptions() {
                  alt="Residential Real Estate" 
                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                />
-               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500" />
                <div className="absolute bottom-6 left-6 right-6">
                  <span className="bg-white/95 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary shadow-sm">From €250,000</span>
                </div>
@@ -73,7 +73,7 @@ export function InvestmentOptions() {
                  alt="Prime Locations" 
                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
                />
-               <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors duration-500" />
                <div className="absolute bottom-6 left-6 right-6">
                  <span className="bg-white/95 backdrop-blur-sm px-3 py-1 text-xs font-bold uppercase tracking-wider text-primary shadow-sm">From €800,000</span>
                </div>
